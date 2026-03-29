@@ -1,0 +1,16 @@
+if SHIELD_CLA57_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "CLA57(Left)"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_CLA57_LEFT || SHIELD_CLA57_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif

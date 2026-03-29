@@ -1,0 +1,4 @@
+build:
+  cmake-ext:
+    root: ..
+  kconfig-ext: true
