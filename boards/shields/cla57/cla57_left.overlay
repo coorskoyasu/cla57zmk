@@ -16,7 +16,7 @@
 /* WS2812 RGB LED configuration
  * Data pin: P0.06 (pro_micro pin 1 / D1 on nice_nano_v2)
  * Adjust chain-length to match the number of LEDs on your board.
- */
+ 
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
@@ -30,7 +30,7 @@
         };
     };
 };
-
+*/
 &spi3 {
     compatible = "nordic,nrf-spim";
     status = "okay";
