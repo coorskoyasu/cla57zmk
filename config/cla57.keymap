@@ -24,7 +24,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
+/* #include <dt-bindings/zmk/rgb.h> */
 
 #define DEFAULT 0
 #define NICOLA  1
@@ -42,14 +42,14 @@
         to_default: to_default {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(240,100,50)>, <&to DEFAULT>;
+            bindings = <&to DEFAULT>;
             label = "TO_DEFAULT";
         };
 
         to_nicola: to_nicola {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,100,50)>, <&to NICOLA>;
+            bindings = <&to NICOLA>;
             label = "TO_NICOLA";
         };
 

@@ -1,4 +1,3 @@
 build:
-  cmake-ext:
-    root: ..
-  kconfig-ext: true
+  settings:
+    board_root: .
